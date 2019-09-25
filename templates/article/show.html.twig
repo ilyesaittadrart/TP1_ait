@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ article.libelle }}
+{% endblock %}
+
+{% block body %}
+
+<div class="ad-title" style="background-image: url({{ article.image }})">
+    <div class="container">
+        <h1>{{ article.libelle }}</h1>
+        <p>{{article.description}}</p>
+        <p class="h2">
+        <strong>
+            {{article.prix}}&euro;
+        </strong> 
+        </p>
+        <a href="#" class="btn btn-primary">Acheter !</a>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div="col-4">
+                    <img src="http://placehold.it/64x64" alt="Avatar de Joseph">
+                </div>
+                <div class="col">
+
+                    <h3> Ait tadrart ilyes </h3>
+                    <span class="badge badge-primary">3 articles</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sequi fuga ea similique facilis debitis tenetur? Aut, cupiditate quaerat, provident tempore officia sapiente assumenda suscipit explicabo animi voluptatibus quo maxime?
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sequi fuga ea similique facilis debitis tenetur? Aut, cupiditate quaerat, provident tempore officia sapiente assumenda suscipit explicabo animi voluptatibus quo maxime?
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sequi fuga ea similique facilis debitis tenetur? Aut, cupiditate quaerat, provident tempore officia sapiente assumenda suscipit explicabo animi voluptatibus quo maxime?
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

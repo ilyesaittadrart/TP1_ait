@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="jumbotron mt-3">
+        <h1 class="display-3">Bienvenue sur TP1 !</h1>
+        <p class="lead">Nous mettons en relation les lecteurs et les éditeurs qui veulent pouvoir lire !</p>
+        <hr class="my-4">
+        <p>Vous êtes lecteur ? et vous voulez voir les différents articles actuellement disponibles ?</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{{ path('articles_index')}}" role="button">Voir nos articles</a>
+        </p>
+    </div>
+</div>
+{% endblock %}
