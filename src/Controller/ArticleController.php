@@ -11,6 +11,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ArticleController extends AbstractController
 {
     /**
+     * Permet d'afficher tout les articles 
+     * 
      * @Route("/article", name="articles_index")
      */
     public function index(ArticleRepository $repo)
